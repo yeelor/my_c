@@ -44,7 +44,6 @@ int getClusterOfInstance(vector<Instance> means, Instance Instance) {
 float computeWcssOfClusters(vector<vector<Instance> > clusters, vector<Instance> means) {
   float sumOfSquares = 0;
   for (int i = 0; i < k; i++) {
-    // vector<Instance> t = clusters[i];
     for (int j = 0; j < clusters[i].size(); j++) {
       sumOfSquares += getDistance(clusters[i][j], means[i]);
     }
@@ -86,7 +85,6 @@ vector<Instance> initialMeans(vector<Instance> instances) {
     instance.x = instances[i].x;
     instance.y = instances[i].y;
     means.push_back(instance);
-    // cout<<"means["<<i<<"]:"<<means[i].x<<"  "<<means[i].y<<endl;
   }
   return means;
 }
