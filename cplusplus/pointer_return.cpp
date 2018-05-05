@@ -31,6 +31,7 @@ int main ()
    {
        cout << "*(p + " << i << ") : ";
        cout << *(p + i) << endl;
+       cout << p[i] << endl;
    }
  
    return 0;

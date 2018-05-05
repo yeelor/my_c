@@ -1,4 +1,6 @@
 #include <iostream>
+#include <math.h>
+
 using namespace std;
 
 void printT(){
@@ -11,11 +13,18 @@ int main() {
 //   i = static_cast<int>(f);
 //   cout << i << endl;
 
+  cout <<sqrt(1.44)<<endl;
+  cout <<sqrt(0)<<endl;
+
   int i;
-  std:string p = "This is an example.";
+  string p = "This is an example.";
+  string please = " please ";
+  
   // i = reinterpret_cast<int>(&p);
   cout <<"i:"<<i << endl;
   cout <<"p:"<< p << endl;
+  cout <<"p + please:"<< p +please << endl;
+
 
   cout <<"sizeof(int):"<<sizeof(int)<<endl;
   cout <<"sizeof(long):"<<sizeof(long)<<endl;
@@ -26,6 +35,9 @@ int main() {
   cout << "sizeof('guotao'):"<<sizeof(s)<<endl;
   cout << "sizeof(s):"<<sizeof(s)<<endl;
   cout <<"s.size():"<<s.size()<<endl;
+
+	cout << "The value of INT_MAX is "<< std::numeric_limits<int>::max()<<endl;	
+  cout << "The value of INT_MIN is "<< std::numeric_limits<int>::min()<<endl;	
 
   return 0;
 }
